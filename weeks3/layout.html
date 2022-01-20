@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        background-color: aqua;
+        /* height: 100px; */
+        grid-column: span 2
+      }
+      .sidebar {
+        /* height: 500px; */
+        background-color: blueviolet;
+
+        /* grid-column: span 4 / span 4; */
+      }
+      .sidebar-2{
+       /* height: 500px; */
+       background-color: aqua;
+       
+      }
+      .content {
+        /* height: 500px; */
+        background-color: green;
+        /* grid-column: span 8 / span 8; */
+      }
+      footer {
+        /* height: 100px; */
+        background-color: brown;
+        /* grid-column: 1 / -1; */
+      }
+      .grid-cols-12 {
+       height: 400px;
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="grid-cols-12">
+      <nav class="navbar">navbar</nav>
+      <aside class="sidebar">sidebar</aside>
+      <main class="content">content</main>
+      <!-- <aside class="sidebar-2">sidebar</aside> -->
+      <!-- <footer>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex enim
+        adipisci doloribus! Dignissimos ad maxime hic? Laborum saepe laboriosam
+        explicabo, nam temporibus qui autem. Commodi voluptates illo molestiae
+        eligendi inventore.
+      </footer> -->
+      <div class="card">
+        <div class="card__header">
+          <div class="header__title"></div>
+          <div class="header__caption"></div>
+          <div class="header__img"></div>
+        </div>
+        <div class="card__content">
+          <p class="content__paragraf paragraf--white"></p>
+          <p class="content__paragraf paragraf--blue"></p>
+          <p class="content__paragraf paragraf--black"></p>
+          <p class="content__paragraf"></p>
+        </div>
+        <div class="card__footer"></div>
+      </div>
+    </main>
+  </body>
+</html>
